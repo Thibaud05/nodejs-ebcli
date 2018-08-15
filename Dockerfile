@@ -7,7 +7,7 @@ RUN apt-get update && \
         python-setuptools \
         groff \
         less \
-    && pip --no-cache-dir install --upgrade awscli \
+    && pip install awscli \
     && apt-get clean
 
 CMD ["/bin/bash"]
